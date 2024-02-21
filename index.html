@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,64 @@
     <link rel="stylesheet" href="styles/styles.css">
 
 </head>
-<body>
-    <h2 class="fontrale">bismillahir rahmanir rahim</h2>
-    <h1 class="text-red-600 font-raleway text-8xl">Bismillahir rahmanir rahim</h1>
-    <h1 class="text-red-600 raleway-font text-8xl">Bismillahir rahmanir rahim</h1>
+<body class="raleway-font">
+  <header>
+         <!-- nav bar -->
+         <nav class="mx-auto max-w-[1170px]">
+          <div class="navbar bg-base-100">
+              <div class="navbar-start">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <a class="text-4xl font-extrabold">P-Ticket</a>
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end">
+                <a class="btn bg-[#1DD10026] text-[#1DD100] font-bold border-2 border-[#1DD10066] text-xl px-6 py-3">Bus <img src="images/bus-icon.png" alt=""></a>
+              </div>
+            </div>
+      </nav>
+       <!-- nav end -->
+      <!-- banner section start  -->
+      <section class="mx-auto max-w-[1170px] mt-10">
+          <div class="hero h-[60vh] object-cover object-center rounded-3xl " style="background-image: url(images/banner.png);">
+            <div class="hero-content text-center text-neutral-content">
+              <div>
+                <h1 class="mb-10 text-white text-6xl font-bold">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+                <p class="mb-5 w-[690px] text-white">Embark on Unforgettable Journeys Around the Globe. From breathtaking landscapes to immersive cultural experiences, let us be your guide as you explore the world's wonders.</p>
+                <button class="btn bg-[#1DD100] border-none px-5 font-bold text-xl">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- banner end -->
+  </header>
 
+  <main>
+    <!-- best offer start-->
+    <section class="mx-auto max-w-[1170px] mt-24">
+      <h1 class="text-center text-4xl font-bold">Best offers for you</h1>
+    </section>
+  </main>
+  
+  <footer>
+
+  </footer>
     <!-- scripts -->
     <script src="scripts/1st.js"></script>
 </body>
