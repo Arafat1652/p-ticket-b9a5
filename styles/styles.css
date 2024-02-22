@@ -8,3 +8,27 @@
   font-weight: weight;
   font-style: normal;
 }
+
+
+.add-btn {
+  background-color: rgba(3, 7, 18, 0.1); 
+  height: 56px;
+  width: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem; 
+  font-weight: bold;
+}
+
+
+
+
+/* bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold
+bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold
+bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold
+bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold
+bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold
+bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold
+bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold
+bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold */
