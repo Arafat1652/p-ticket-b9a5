@@ -14,7 +14,7 @@ for (const btn of allBtn){
         // for limit of for seat
         const firstSeatCount = getConvertedValue("seat-count")
         if(firstSeatCount+1>4){
-            alert('You selected 4 seat')
+            alert('You can select 4 seats')
             return;
         }
         event.target.parentNode.style.background = "#1DD100"
@@ -82,7 +82,7 @@ function updateGrandTotal(status){
         }
         
         else{
-            alert('Enter a right coupon code')
+            alert('Please enter a right coupon code')
         }
 
     }
@@ -91,21 +91,12 @@ function updateGrandTotal(status){
 
 }
 
-
-
 function updateTotalCost(value){
 
     const totalCost = getConvertedValue("total-cost")
     const sum = totalCost + value;
     document.getElementById('total-cost').innerText = sum
 }
-
-
-
-
-
-
-
 
 
 // for parse initail price and parseInt. and can function called.
