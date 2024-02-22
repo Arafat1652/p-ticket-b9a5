@@ -205,7 +205,30 @@
                 <h2 class="text-xl font-semibold">Grand Total</h2>
                 <h3 class="text-xl font-semibold mb-8">BDT <span id="grand-total">0</span></h3>
               </div>
-              <button class="btn bg-[#1DD100] w-[70%] ml-20">Next</button>
+              <button class="btn bg-[#1DD100] w-[70%] ml-20 " onclick="my_modal_1.showModal()">Next</button>
+              <!-- modal -->
+  
+<!-- Open the modal using ID.showModal() method -->
+
+<div class="mx-auto text-center">
+  <dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+      <img class="mx-auto mb-8" src="images/success.png" alt="">
+      <h3 class="font-bold text-lg">SUCCESS</SUb></h3>
+      <hr>
+      <p class="py-4 font-semibold">Thank you for Booking Our bus Seats.<br>We are working hard to find the best deals for you.</p>
+      <p class="">Shortly you will find a confirmation in your emaiil.</p>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn bg-[#1DD100] mr-48">Continue</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+<!-- modal -->
 
 
         </div>

@@ -115,14 +115,3 @@ function getConvertedValue(id){
     return convertedPrice;
 }
 
-
-
-
-
-
-
-
-// ---- jokhon lagbe use korbo
-// const price = getConvertedValue('total-seat')
-// const seatCount = getConvertedValue('seat')
-// const left = getConvertedValue('')
