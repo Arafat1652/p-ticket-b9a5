@@ -102,7 +102,7 @@
     <!-- end copun section -->
 
 
-    <main class="bg-[#F7F8F8] h-[100vh] w-[100%] border-[#1DD10066] border-y-2 rounded-t-[80px]">
+    <main class="bg-[#F7F8F8] min-h-screen w-[100%] border-[#1DD10066] border-t-2 rounded-t-[80px] rounded-b-none">
           <!-- paribahan -->
       <section class="mx-auto max-w-[1170px]">
         <h1 class="text-3xl font-bold text-center mt-28">P.H Paribahan</h1>
@@ -111,7 +111,7 @@
           <div class="w-[70%]">
             <div class="flex justify-between">
               <!-- bus logo -->
-              <div class="flex gap-3 items-center">
+              <div class="flex gap-3 items-center mb-5">
                 <div>
                   <img src="images/bus-logo.png" alt="" srcset="">
                 </div>
@@ -158,38 +158,61 @@
           </div>
         </div>
       </section>
-      <!-- sit section -->
-      <section class="mx-auto max-w-[1170px]">
+      <!-- seat section -->
+      <section class="mx-auto max-w-[1170px] bg-white rounded-2xl">
 
-       <div class="grid grid-cols-2">
-        <div class="border-4 border-red-500">
-          <h1>Select Your Seat</h1>
+       <div class="grid grid-cols-2 mt-24">
+        <div class=" p-6">
+          <h1 class="mb-5 text-2xl font-semibold">Select Your Seat</h1>
+
           <div class="flex justify-between"><button class="btn "><img src="images/seat-gray.png" alt="">Available</button>
           <button class="btn text-[#1DD100]"><img src="images/seat-green-filled.png" alt="">Selected</button></div>
-          <button class="bg-[#0307121A] px-10 py-3 rounded-xl border-4 border-blue-500"><img class="w-6 h-6" src="images/wheel.svg" alt="" srcset=""></button>
+          
+          <button class="bg-[#0307121A] px-10 py-3 rounded-xl mt-5 translate-x-[420px] mb-10"><img class="w-6 h-6" src="images/wheel.svg" alt="" srcset=""></button>
+            <div class="grid grid-cols-4 gap-x-8  gap-y-6 ">
+              <div id="A1" class="bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold">A1</div>
+              <div id="A2" class="bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold">A2</div>
+              <div id="A3" class="bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold">A3</div>
+              <div id="A4" class="bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold">A4</div>
+              <div id="B1" class="bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold">B1</div>
+              <div id="B2" class="bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold">B2</div>
+              <div id="B3" class="bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold">B3</div>
+              <div id="B4" class="bg-[#0307121A] h-14 w-28 flex justify-center items-center rounded-xl font-bold">B4</div>
+            </div>
         </div>
+        <!-- <div class="divider divider-horizontal"></div> -->
+        <!-- form part -->
         <div>
-          <h1>Select Your Seat</h1>
+          <h1 class="mb-5 mt-5 text-2xl font-semibold text-center">Select Your Seat</h1>
+          <div class="mx-auto bg-[#0307121A] py-12 rounded-3xl p-3 w-[70%]">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="text-base">Seat <span class="bg-[#1DD100] rounded-full p-1 text-sm text-white">0</span></th>
+                  <th class="text-base">Class</th>
+                  <th class="text-base">Fare</th>
+                </tr>
+              </thead>
+              </table>
+              </div>
+              <div class="flex justify-around">
+                <h2 class="text-xl font-semibold">Total Price</h2>
+                <h3 class="text-xl font-semibold mb-8">BDT <span>0</span></h3>
+              </div>
+              <div class="flex justify-center">
+                <input type="text" placeholder="have a cupon?" class="input input-bordered"/>
+                <button class="bg-[#1DD100] text-black px-6 py-3 rounded-r-lg" type="submit">Apply</button>
+              </div>
+              <div class="flex justify-around mt-5">
+                <h2 class="text-xl font-semibold">Grand Total</h2>
+                <h3 class="text-xl font-semibold mb-8">BDT <span>0</span></h3>
+              </div>
+              <button class="btn bg-[#1DD100] w-[70%] ml-20">Next</button>
+
+
         </div>
        </div>
-
-
-
-
-
-
-
-
-
-          <!-- left side -->
-            
-            <!-- <div class="A">A</div>
-            <div class="A1">A1</div>
-            <div class="A2">A2</div>
-            <div class="A3">A3</div>
-            <div class="A4">A4</div>
-          </div> -->
-          <!-- right side -->
 
       </section>
     </main>
