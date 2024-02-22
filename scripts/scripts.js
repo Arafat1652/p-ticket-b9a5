@@ -5,7 +5,31 @@ for (const btn of allBtn){
     btn.addEventListener("click", function (event){
         const btnName = event.target.parentNode.childNodes[0].innerText
         
-        const selectedContainer = document.getElementById("selected-seat-container")
+        const selectedContainer = document.getElementById("selected-seat-container");
+
+        // for 1 time press of any button
+        event.target.setAttribute("disabled", false)
+
+        // for limit of for seat
+        const firstSeatCount = getConvertedValue("seat-count")
+        if(firstSeatCount+1>4){
+            alert('You selected 4 seat')
+            return;
+        }
+
+        // seat update
+        const totalSeat = getConvertedValue("total-seat");
+        document.getElementById("total-seat").innerText = totalSeat - 1;
+
+
+        // ticket update
+
+        const seatCount = getConvertedValue("seat-count");
+        document.getElementById("seat-count").innerText = seatCount + 1;
+
+
+
+
 
         const div = document.createElement('div');
         div.classList.add('flex')
