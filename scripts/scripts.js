@@ -18,7 +18,7 @@ for (const btn of allBtn){
 
         p1.innerText = btnName;
         p2.innerText = 'Economy';
-        p3.innerText = parseInt('500');
+        p3.innerText = parseInt('550');
 
         div.appendChild(p1)
         div.appendChild(p2)
@@ -26,15 +26,41 @@ for (const btn of allBtn){
 
         selectedContainer.appendChild(div)
         
-        updateTotalCost(500)
+        updateTotalCost(550)
         updateGrandTotal()
     })
     
 }
 
-function updateGrandTotal(){
+function updateGrandTotal(status){
+
     const totalCost = getConvertedValue("total-cost")
-    document.getElementById("grand-total").innerText = totalCost;
+    if(status==undefined){
+        
+        document.getElementById("grand-total").innerText = totalCost;
+
+    }
+    else{
+    const couponCode= document.getElementById("coupon-code").value;
+        if(couponCode=='Couple 20') {
+            const discount = totalCost * 0.2;
+            document.getElementById("grand-total").innerText = totalCost-discount
+
+        }
+        else if(couponCode=='NEW15'){
+            const discount = totalCost * 0.15;
+            document.getElementById("grand-total").innerText = totalCost-discount
+
+        }
+        
+        else{
+            alert('Enter a right coupon code')
+        }
+
+    }
+
+
+
 }
 
 
