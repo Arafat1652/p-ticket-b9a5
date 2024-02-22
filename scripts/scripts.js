@@ -9,6 +9,7 @@ for (const btn of allBtn){
 
         // for 1 time press of any button
         event.target.setAttribute("disabled", false)
+      
 
         // for limit of for seat
         const firstSeatCount = getConvertedValue("seat-count")
@@ -16,6 +17,9 @@ for (const btn of allBtn){
             alert('You selected 4 seat')
             return;
         }
+        event.target.parentNode.style.background = "#1DD100"
+        event.target.parentNode.style.borderRadius = "8px"
+        event.target.parentNode.style.color = "white"
 
         // seat update
         const totalSeat = getConvertedValue("total-seat");
