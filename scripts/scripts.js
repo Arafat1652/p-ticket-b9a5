@@ -60,6 +60,7 @@ for (const btn of allBtn){
     
 }
 
+
 function updateGrandTotal(status){
 
     const totalCost = getConvertedValue("total-cost")
@@ -73,11 +74,18 @@ function updateGrandTotal(status){
         if(couponCode=='Couple 20') {
             const discount = totalCost * 0.2;
             document.getElementById("grand-total").innerText = totalCost-discount
+                // if one click then hidden
+             const hidden = document.getElementById('apply-btn');
+            hidden.parentNode.classList.add('hidden')
+
 
         }
         else if(couponCode=='NEW15'){
             const discount = totalCost * 0.15;
             document.getElementById("grand-total").innerText = totalCost-discount
+                          // if one click then hidden
+             const hidden = document.getElementById('apply-btn');
+             hidden.parentNode.classList.add('hidden')
 
         }
         
@@ -86,8 +94,6 @@ function updateGrandTotal(status){
         }
 
     }
-
-
 
 }
 
